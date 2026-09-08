@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Facture Vierge</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+        .header { display: flex; justify-content: space-between; border-bottom: 2px solid #333; padding-bottom: 20px; }
+        .title { font-size: 28px; font-weight: bold; text-transform: uppercase; }
+        .info-section { display: flex; justify-content: space-between; margin: 30px 0; }
+        .info-box { width: 45%; border: 1px solid #ccc; padding: 15px; border-radius: 5px; min-height: 100px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .totals { float: right; width: 40%; margin-top: 20px; }
+        .totals table { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <h2>[Nom de votre Entreprise / Nom]</h2>
+            <p>Adresse: _____________________</p>
+            <p>Tél: _________________________</p>
+            <p>Email: _______________________</p>
+        </div>
+        <div>
+            <div class="title">FACTURE</div>
+            <p><strong>N° Facture :</strong> ______________</p>
+            <p><strong>Date :</strong> ____ / ____ / 20__</p>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-box">
+            <strong>Facturé à (Client) :</strong>
+            <p>Nom / Entreprise : _______________</p>
+            <p>Adresse : ______________________</p>
+            <p>N° Tél : _______________________</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Description / Désignation</th>
+                <th style="width: 10%;">Qté</th>
+                <th style="width: 20%;">Prix Unitaire</th>
+                <th style="width: 20%;">Total HT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="height:25px;"></td><td></td><td></td><td></td></tr>
+            <tr><td style="height:25px;"></td><td></td><td></td><td></td></tr>
+            <tr><td style="height:25px;"></td><td></td><td></td><td></td></tr>
+            <tr><td style="height:25px;"></td><td></td><td></td><td></td></tr>
+            <tr><td style="height:25px;"></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <table>
+            <tr>
+                <th>Total HT</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>TVA (___%)</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Total TTC</th>
+                <td><strong></strong></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
